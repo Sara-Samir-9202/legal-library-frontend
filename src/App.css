@@ -1,0 +1,171 @@
+/* App.css - الكود الكامل */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ======================================== */
+/* 🔥 3D Book Styles - Enhanced */
+/* ======================================== */
+
+/* Perspective for 3D effect */
+.perspective {
+  perspective: 1000px;
+}
+
+.perspective-800 {
+  perspective: 800px;
+}
+
+/* 3D transform styles */
+.book {
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.group:hover .book {
+  transform: rotateY(-15deg) rotateX(3deg);
+}
+
+/* Book cover shadow */
+.book-cover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Book spine (side of book) */
+.book-spine {
+  position: absolute;
+  top: 0;
+  left: -6px;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(to right, #ccc, #eee);
+  border-radius: 2px;
+  box-shadow: inset 1px 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Transform style for 3D */
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+/* Smooth transitions */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Hover effects */
+.group:hover .group-hover\:scale-105 {
+  transform: scale(1.05);
+}
+
+/* Additional 3D book effects */
+.book-shadow {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2),
+              0 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Book page edges */
+.book-pages {
+  position: absolute;
+  bottom: -2px;
+  left: 2px;
+  right: 2px;
+  height: 3px;
+  background: linear-gradient(to bottom, #e5e5e5, #d4d4d4);
+  border-radius: 0 0 2px 2px;
+}
+
+/* Gold decorative elements */
+.gold-border {
+  border: 1px solid rgba(201, 169, 110, 0.3);
+}
+
+.gold-text {
+  color: #c9a96e;
+}
+
+.gold-bg {
+  background: linear-gradient(135deg, #c9a96e, #e4c088);
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 640px) {
+  .perspective-800 {
+    perspective: 600px;
+  }
+}
+
+/* Animation for book loading */
+@keyframes bookFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.book-card {
+  animation: bookFadeIn 0.4s ease-out;
+}
+
+/* Custom scrollbar for books grid */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(201, 169, 110, 0.5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(201, 169, 110, 0.7);
+}
