@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# 📚 Mizan Legal Library – Frontend (React.js)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Your Professional Digital Legal Library Experience
 
-## Available Scripts
+This is the **official frontend** of the **Mizan Legal Library** platform – a complete, production-ready web application built for a real client. It provides a seamless, modern interface for legal professionals, students, and researchers to browse, search, read, and download thousands of legal books online.
 
-In the project directory, you can run:
+🔗 **Live Demo:** [https://legal-library-frontend-iq9p.vercel.app/](https://legal-library-frontend-iq9p.vercel.app/)
 
-### `npm start`
+🔗 **Backend Repository:** [https://github.com/Sara-Samir-9202/LegalLibraryJourney](https://github.com/Sara-Samir-9202/LegalLibraryJourney)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🔗 **Live API Documentation (Swagger):** [https://mizan-legallibrary.runasp.net/swagger/index.html](https://mizan-legallibrary.runasp.net/swagger/index.html)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 👥 Public Routes (No Login Required)
+| Feature | Description |
+|---------|-------------|
+| 🏠 **Home Page** | Hero section, animated stats, featured books preview |
+| 📖 **Public Books** | Browse/search all published legal books |
+| 🏷️ **Categories** | Filter books by legal fields (Criminal, Civil, Constitutional, International) |
+| 📝 **Register / Login** | Create account or sign in with JWT authentication |
 
-### `npm run build`
+### 🧑‍🎓 Student Routes (Logged-in Users)
+| Feature | Description |
+|---------|-------------|
+| 👋 **Welcome Dashboard** | Personalized greeting + full book catalog |
+| 📄 **Read Online** | Simulated reader view (real PDF integration ready) |
+| ⬇️ **Download Books** | Track downloads + increment counters via API |
+| 📚 **Books by Category** | Dynamic filtering by legal categories |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 👑 Admin Routes (Role-Based Access)
+| Feature | Description |
+|---------|-------------|
+| 📊 **Dashboard** | Total books, downloads, users – live stats |
+| ➕ **Add / Edit / Delete Books** | Full CRUD operations via API |
+| 🏷️ **Manage Categories** | Create, update, or delete legal categories |
+| 📁 **Upload Files** | PDF & cover image upload (integrated with backend) |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🔧 Shared Components
+- 🧭 **Dynamic Navbar** – changes based on auth state
+- 🎴 **3D Hover Book Cards** – modern UI/UX
+- 🔐 **Protected Routes** – admin/student guards
+- 📱 **Fully Responsive** – works on desktop, tablet, mobile
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠️ Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Category | Technology |
+|----------|------------|
+| **Library** | React 18 |
+| **Language** | JavaScript (ES6+) |
+| **HTTP Client** | Axios (with interceptors for JWT) |
+| **Routing** | React Router DOM v6 |
+| **Styling** | CSS3 + CSS Variables (design tokens) |
+| **Icons** | Font Awesome 6 |
+| **State Management** | React Hooks (useState, useEffect, Context) |
+| **Build Tool** | Create React App |
+| **Deployment** | Vercel |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 Getting Started
 
-## Learn More
+### Prerequisites
+- Node.js (v18 or later)
+- npm or yarn
+- Backend API running (or use the live API endpoint)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Clone the repository**
+```bash
+git clone https://github.com/Sara-Samir-9202/legal-library-frontend.git
+cd legal-library-frontend
 
-### Code Splitting
+Live Demo: Mizan Legal Library
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+⭐ Show Your Support
+If you found this project helpful, please give it a ⭐ on GitHub!
