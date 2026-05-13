@@ -11,6 +11,10 @@ This is the **official frontend** of the **Mizan Legal Library** platform – a 
 🔗 **Live API Documentation (Swagger):** [https://mizan-legallibrary.runasp.net/swagger/index.html](https://mizan-legallibrary.runasp.net/swagger/index.html)
 
 ---
+## Frontend Architecture Details:
+
+<img width="1024" height="487" alt="image" src="https://github.com/user-attachments/assets/d916a589-9a58-4ed1-9c92-e7a17df43c12" />
+
 
 ## ✨ Features
 
